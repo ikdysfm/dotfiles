@@ -3,5 +3,11 @@
 set -gx GOPATH $HOME/.go
 set -gx PATH $PATH $GOPATH/bin
 
+# キーバインド定義
+function fish_user_key_bindings
+  bind \cr peco_select_history
+  bind \c] peco_select_ghq_repository
+end
+
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
