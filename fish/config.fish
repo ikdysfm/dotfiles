@@ -5,7 +5,7 @@ set -gx PATH $PATH $GOPATH/bin
 
 # キーバインド定義
 function fish_user_key_bindings
-  bind \cr peco_select_history
+  bind \cr 'peco_select_history (commandline -b)'
   bind \c] peco_select_ghq_repository
 end
 
