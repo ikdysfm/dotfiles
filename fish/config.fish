@@ -11,7 +11,7 @@ end
 
 # nvmの初期化
 # fish用がないのでbassを通している
-bass source ~/.nvm/nvm.sh --no-use ';' nvm
+# bass source ~/.nvm/nvm.sh --no-use ';' nvm
 
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
