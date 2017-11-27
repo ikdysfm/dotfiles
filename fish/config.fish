@@ -17,6 +17,7 @@ bass source ~/.nvm/nvm.sh
 
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
+balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
 # direnv
 eval (direnv hook fish)
