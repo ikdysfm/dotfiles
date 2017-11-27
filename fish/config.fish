@@ -2,6 +2,7 @@
 # -gを付けなくても位置的にグローバルだが明示的に
 set -gx GOPATH $HOME/.go
 set -gx PATH $PATH $GOPATH/bin
+set -gx EDITOR /usr/bin/vi
 
 # キーバインド定義
 function fish_user_key_bindings
@@ -16,3 +17,7 @@ bass source ~/.nvm/nvm.sh
 
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
+
+# direnv
+eval (direnv hook fish)
+
