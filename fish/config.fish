@@ -19,6 +19,8 @@ bass source ~/.nvm/nvm.sh
 balias g git
 balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
+tmux_smart_attach
+
 # direnv
 eval (direnv hook fish)
 
