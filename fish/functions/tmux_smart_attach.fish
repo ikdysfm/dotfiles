@@ -1,6 +1,4 @@
 function tmux_smart_attach
-  status -i
-  echo $status
   if [ -z "$TMUX" ] # ログインシェルかどうかはとりあえず見ない
     set -l sessions (tmux list-sessions)
     if [ -z "$sessions" ]  # セッションがなければ新しく作る

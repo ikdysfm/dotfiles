@@ -19,7 +19,11 @@ bass source ~/.nvm/nvm.sh
 balias g git
 balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
-tmux_smart_attach
+# 最初の一回だけ実行。サブシェル起動時も除外されるようにexportする
+if [ -z "$SMART_ATTACHED" ]
+  set -gx SMART_ATTACHED y
+  tmux_smart_attach
+end
 
 # direnv
 eval (direnv hook fish)
