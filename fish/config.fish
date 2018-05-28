@@ -15,14 +15,14 @@ end
 # nvmの読み込み。nvmインストール時に.profileにも書かれるがここでも一応やる
 # fish用がないのでbassを通している
 # --no-useを付けていないのでデフォルトverがPATHにセットされる
-# bass source ~/.nvm/nvm.sh
+bass source ~/.nvm/nvm.sh
 
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
 balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
 # direnv
-# eval (direnv hook fish)
+eval (direnv hook fish)
 
 # 最初の一回だけ実行。サブシェル起動時も除外されるようにexportする
 if [ -z $LOADED ]
