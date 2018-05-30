@@ -3,6 +3,7 @@
 if [ -z $LOADED ]
   set -x GOPATH $HOME/.go
   set -x PATH $PATH $GOPATH/bin
+  set -x PATH $PATH $HOME/.local/bin
   set -x EDITOR /usr/bin/vi
 end
 
