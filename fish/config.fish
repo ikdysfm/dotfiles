@@ -20,6 +20,7 @@ bass source ~/.nvm/nvm.sh
 
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
+balias open xdg-open
 balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
 # direnv
