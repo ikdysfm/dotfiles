@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# ペーストが煩わしいので中クリックを無効化
+xinput set-button-map 'PS/2 Generic Mouse' 1 0 3
