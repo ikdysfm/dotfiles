@@ -6,6 +6,8 @@ from xkeysnail.transform import *
 # [Global modemap] Change modifier keys as in xmodmap
 define_modmap({
     Key.CAPSLOCK: Key.LEFT_CTRL,
+    Key.LEFT_ALT: Key.LEFT_META,
+    Key.LEFT_META: Key.LEFT_ALT,
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
@@ -29,15 +31,20 @@ define_keymap(None, { # 特定のアプリのみ有効にしたい場合はNone�
     K("C-left_brace"): K("esc"),
     K("C-h"): K("backspace"),
 
+    K("Super-space"): K("right_meta"), # gnome-tweaksで右METAをアクティビティのショートカットにしてある前提
+    K("Super-e"): launch(["nautilus"]),
+    K("Super-q"): K("M-f4"),
+    K("Super-t"): launch(["gnome-terminal"]),
+    
     # modifierをスルーする指定はできないっぽい？とりあえず羅列
-    K("M-h"): K("left"),
-    K("M-j"): K("down"),
-    K("M-k"): K("up"),
-    K("M-l"): K("right"),
-    K("M-Shift-h"): K("Shift-left"),
-    K("M-Shift-j"): K("Shift-down"),
-    K("M-Shift-k"): K("Shift-up"),
-    K("M-Shift-l"): K("Shift-right"),
+    K("Super-h"): K("left"),
+    K("Super-j"): K("down"),
+    K("Super-k"): K("up"),
+    K("Super-l"): K("right"),
+    K("Super-Shift-h"): K("Shift-left"),
+    K("Super-Shift-j"): K("Shift-down"),
+    K("Super-Shift-k"): K("Shift-up"),
+    K("Super-Shift-l"): K("Shift-right"),
 
     # サンプルよりその他の書き方
     # K("C-o"): [K("C-a"), K("C-c"), launch(["gedit"]), sleep(0.5), K("C-v")]
