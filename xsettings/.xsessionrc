@@ -2,3 +2,6 @@
 
 # ペーストが煩わしいので中クリックを無効化
 xinput set-button-map 'PS/2 Generic Mouse' 1 0 3
+
+# 左上2、右上8を戻る(8)と進む(9)に割り当て
+xinput set-button-map 'Kensington Kensington Slimblade Trackball' 1 8 3 4 5 6 7 9
