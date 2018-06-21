@@ -8,6 +8,9 @@ define_modmap({
     Key.CAPSLOCK: Key.LEFT_CTRL,
     Key.LEFT_ALT: Key.LEFT_META,
     Key.LEFT_META: Key.LEFT_ALT,
+    # HHKB Type-S
+    Key.MUHENKAN: Key.LEFT_META,
+    Key.HENKAN: Key.RIGHT_META,
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
