@@ -10,8 +10,8 @@ define_modmap({
     Key.LEFT_ALT: Key.LEFT_META,
     Key.LEFT_META: Key.LEFT_ALT,
     # HHKB Type-S
-    Key.MUHENKAN: Key.LEFT_META,
-    Key.HENKAN: Key.RIGHT_CTRL,
+    # Key.MUHENKAN: Key.LEFT_META, 上記設定と併用するとHHKBのスペース左が2つともMETAキーになってしまうので、ファイルを分割して--devicesオプションで区別すべき？
+    # Key.HENKAN: Key.RIGHT_CTRL,
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
