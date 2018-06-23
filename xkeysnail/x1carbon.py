@@ -5,13 +5,9 @@ from xkeysnail.transform import *
 
 # [Global modemap] Change modifier keys as in xmodmap
 define_modmap({
-    # X1 Carbon
     Key.CAPSLOCK: Key.LEFT_CTRL,
     Key.LEFT_ALT: Key.LEFT_META,
     Key.LEFT_META: Key.LEFT_ALT,
-    # HHKB Type-S
-    # Key.MUHENKAN: Key.LEFT_META, 上記設定と併用するとHHKBのスペース左が2つともMETAキーになってしまうので、ファイルを分割して--devicesオプションで区別すべき？
-    # Key.HENKAN: Key.RIGHT_CTRL,
 })
 
 # [Conditional modmap] Change modifier keys in certain applications
@@ -49,6 +45,10 @@ define_keymap(None, { # 特定のアプリのみ有効にしたい場合はNone�
     K("Super-Shift-j"): K("Shift-down"),
     K("Super-Shift-k"): K("Shift-up"),
     K("Super-Shift-l"): K("Shift-right"),
+    K("Super-M-h"): K("M-left"),
+    K("Super-M-j"): K("M-down"),
+    K("Super-M-k"): K("M-up"),
+    K("Super-M-l"): K("M-right"),
 
     # サンプルよりその他の書き方
     # K("C-o"): [K("C-a"), K("C-c"), launch(["gedit"]), sleep(0.5), K("C-v")]
