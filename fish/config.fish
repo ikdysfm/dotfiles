@@ -5,6 +5,7 @@ if [ -z $LOADED ]
   set -x PATH $PATH $GOPATH/bin
   set -x PATH $PATH $HOME/.local/bin
   set -x EDITOR /usr/bin/vi
+  set -x PIPENV_VENV_IN_PROJECT true
 end
 
 # キーバインド定義
