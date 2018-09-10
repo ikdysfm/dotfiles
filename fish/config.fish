@@ -24,6 +24,9 @@ balias g git
 balias open xdg-open
 balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
+# pipenv
+eval (pipenv --completion)
+
 # direnv
 eval (direnv hook fish)
 
