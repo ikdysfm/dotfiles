@@ -14,11 +14,6 @@ function fish_user_key_bindings
   bind \c] peco_select_ghq_repository
 end
 
-# nvmの読み込み。nvmインストール時に.profileにも書かれるがここでも一応やる
-# fish用がないのでbassを通している
-# --no-useを付けていないのでデフォルトverがPATHにセットされる
-bass source ~/.nvm/nvm.sh
-
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
 balias open xdg-open
