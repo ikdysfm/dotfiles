@@ -6,6 +6,8 @@ if [ -z $LOADED ]
   set -x PATH $PATH $HOME/.local/bin
   set -x EDITOR /usr/bin/vi
   set -x PIPENV_VENV_IN_PROJECT true
+  set -x NODE_VERSIONS $HOME/.nvm/versions/node
+  set -x NODE_VERSIONS_PREFIX v
 end
 
 # キーバインド定義
