@@ -26,7 +26,6 @@ balias tmux "direnv exec / tmux" # tmux起動前にdirenvを一旦unload
 
 # env系
 eval (direnv hook fish)
-bass 'eval "$(ndenv init -)"'
 eval (pipenv --completion)
 
 # 最初の一回だけ実行。サブシェル起動時も除外されるようにexportする
