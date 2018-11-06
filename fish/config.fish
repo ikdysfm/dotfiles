@@ -4,7 +4,6 @@ if [ -z $LOADED ]
   set -x GOPATH $HOME/.go
   set -x PATH $PATH $GOPATH/bin
   set -x PATH $PATH $HOME/.local/bin
-  set -x PATH $PATH $HOME/.ndenv/bin
   set -x EDITOR /usr/bin/vi
   set -x PIPENV_VENV_IN_PROJECT true
 end
@@ -14,6 +13,11 @@ function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
   bind \c] peco_select_ghq_repository
 end
+
+# nvmの読み込み。nvmインストール時に.profileにも書かれるがここでも一応やる
+# fish用がないのでbassを通している
+# --no-useを付けていないのでデフォルトverがPATHにセットされる
+bass source ~/.nvm/nvm.sh
 
 # plugin-balias を使った定義。これで定義すると補完もやってくれる
 balias g git
