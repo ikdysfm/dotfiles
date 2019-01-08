@@ -4,6 +4,7 @@ if [ -z $LOADED ]
   set -x GOPATH $HOME/.go
   set -x PATH $PATH $GOPATH/bin
   set -x PATH $PATH $HOME/.local/bin
+  set -x PATH $PATH /usr/lib/inkdrop/resources/app/ipm/bin
   set -x EDITOR /usr/bin/vi
   set -x PIPENV_VENV_IN_PROJECT true
   set -x NODE_VERSIONS $HOME/.nvm/versions/node
